@@ -1,3 +1,7 @@
-# data-analysis-accelerator-3
+# Horizon Voyages — Туристическое Агентство
 
-Initial repository setup for pr-poehali-dev/data-analysis-accelerator-3
+![Preview](https://cdn.poehali.dev/templates/horizon-voyages-ru/preview-ru.jpg)
+
+Современный лендинг для туристического агентства. Включает hero-секцию с поиском туров, популярные направления с красивыми карточками, преимущества компании, туристические пакеты с ценами и подписку на рассылку. Идеально подходит для турфирм, агентств путешествий и онлайн-сервисов бронирования.
+
+`"tags": ["landing", "light", "travel", "pricing", "gradient", "general"]`
