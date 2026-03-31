@@ -4,46 +4,32 @@ import { MapPin, ArrowRight } from "lucide-react"
 
 const destinations = [
   {
-    name: "Санторини",
-    country: "Греция",
-    image: "/santorini-sunset.png",
-    description: "Белоснежные домики и потрясающие закаты над морем",
-    price: "от 249 900 ₽",
+    name: "Eleon",
+    country: "Премиум-класс",
+    image: "https://cdn.poehali.dev/projects/c38de44d-1171-44ea-bd2b-8821fc7542ab/files/4683cb0a-8cef-40ac-a16e-01f18be870bd.jpg",
+    description: "Элегантный отель с изысканным интерьером, панорамными террасами и авторской кухней",
+    price: "от 12 000 ₽/ночь",
   },
   {
-    name: "Бали",
-    country: "Индонезия",
-    image: "/bali-indonesia-rice-terraces-tropical-paradise.jpg",
-    description: "Тропический рай с древними храмами и пляжами",
-    price: "от 189 900 ₽",
+    name: "Grand Azure Palace",
+    country: "Люкс-класс",
+    image: "https://cdn.poehali.dev/projects/c38de44d-1171-44ea-bd2b-8821fc7542ab/files/4b8bd064-ce7b-4401-9512-05efa3eaca5e.jpg",
+    description: "Дворцовая архитектура, бассейн с видом на горизонт и персональный консьерж",
+    price: "от 25 000 ₽/ночь",
   },
   {
-    name: "Киото",
-    country: "Япония",
-    image: "/kyoto-japan-traditional-temples-cherry-blossoms.jpg",
-    description: "Древние храмы и традиционная японская культура",
-    price: "от 279 900 ₽",
+    name: "Royal Emerald Residence",
+    country: "Ультра-люкс",
+    image: "https://cdn.poehali.dev/projects/c38de44d-1171-44ea-bd2b-8821fc7542ab/files/3fc1cbf0-3284-4a27-90b9-067b95aff07a.jpg",
+    description: "Апартаменты с приватными садами, SPA-зона и ресторан с мишленовской кухней",
+    price: "от 35 000 ₽/ночь",
   },
   {
-    name: "Мальдивы",
-    country: "Индийский океан",
-    image: "/maldives-overwater-bungalows-crystal-clear-water.jpg",
-    description: "Виллы над водой и нетронутые коралловые рифы",
-    price: "от 349 900 ₽",
-  },
-  {
-    name: "Исландия",
-    country: "Северная Европа",
-    image: "/iceland-northern-lights-waterfalls-dramatic-landsc.jpg",
-    description: "Северное сияние и величественные вулканические ландшафты",
-    price: "от 299 900 ₽",
-  },
-  {
-    name: "Дубай",
-    country: "ОАЭ",
-    image: "/dubai-modern-skyline-luxury-desert.jpg",
-    description: "Современная роскошь и приключения в пустыне",
-    price: "от 229 900 ₽",
+    name: "Imperial Sapphire Hotel",
+    country: "Империал-класс",
+    image: "https://cdn.poehali.dev/projects/c38de44d-1171-44ea-bd2b-8821fc7542ab/files/1bb8b35a-8ac4-45e5-b67a-d01ce4ba98ea.jpg",
+    description: "Символ роскоши: золотые детали, пентхаусы и приватный пляж для гостей",
+    price: "от 50 000 ₽/ночь",
   },
 ]
 
@@ -54,15 +40,15 @@ export function FeaturedDestinations() {
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
           <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-6 text-balance">
-            Популярные <span className="font-semibold">направления</span>
+            Наши <span className="font-semibold">отели</span>
           </h2>
           <p className="text-lg text-muted-foreground text-balance leading-relaxed">
-            Лучшие направления с незабываемыми впечатлениями и захватывающей красотой
+            Четыре уникальных пространства — каждый со своим характером, но единым стандартом безупречного сервиса
           </p>
         </div>
 
         {/* Destinations Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {destinations.map((destination, index) => (
             <Card
               key={index}
@@ -80,7 +66,7 @@ export function FeaturedDestinations() {
                 {/* Location Badge */}
                 <div className="absolute top-4 left-4 flex items-center gap-1.5 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full">
                   <MapPin className="h-3.5 w-3.5 text-primary" />
-                  <span className="text-xs font-medium">{destination.country}</span>
+                  <span className="text-xs font-medium tracking-wide uppercase">{destination.country}</span>
                 </div>
               </div>
 
@@ -94,7 +80,7 @@ export function FeaturedDestinations() {
                 <div className="flex items-center justify-between pt-4 border-t border-border">
                   <span className="text-sm font-semibold text-primary">{destination.price}</span>
                   <Button variant="ghost" size="sm" className="group/btn text-foreground hover:text-primary">
-                    Подробнее
+                    Забронировать
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
                 </div>
@@ -106,7 +92,7 @@ export function FeaturedDestinations() {
         {/* View All Button */}
         <div className="text-center mt-16">
           <Button variant="outline" size="lg" className="rounded-full px-8 border-2 bg-transparent">
-            Все направления
+            Сравнить все отели
           </Button>
         </div>
       </div>

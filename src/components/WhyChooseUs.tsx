@@ -1,25 +1,25 @@
-import { Globe, Shield, Headphones, Award } from "lucide-react"
+import { Gem, Shield, Headphones, Award } from "lucide-react"
 
 const features = [
   {
-    icon: Globe,
-    title: "Глобальная сеть",
-    description: "Доступ к 150+ направлениям по всему миру с местными экспертами и аутентичным опытом",
+    icon: Gem,
+    title: "Премиум-уровень",
+    description: "Каждый отель сети — это безупречный стандарт качества, проверенный тысячами довольных гостей",
   },
   {
     icon: Shield,
-    title: "Безопасное бронирование",
-    description: "Защищенные платежи и полная страховка путешествий для вашего спокойствия",
+    title: "Надёжное бронирование",
+    description: "Защищённая оплата, гибкие условия отмены и прозрачная политика без скрытых сборов",
   },
   {
     icon: Headphones,
-    title: "Поддержка 24/7",
-    description: "Круглосуточная служба поддержки до, во время и после вашей поездки",
+    title: "Консьерж-сервис 24/7",
+    description: "Персональный консьерж на связи круглосуточно: от трансфера до резервирования столика",
   },
   {
     icon: Award,
-    title: "Гарантия лучшей цены",
-    description: "Конкурентные цены с гарантией лучшей цены и гибкими вариантами оплаты",
+    title: "Награды и признание",
+    description: "Многократные лауреаты премий лучших отелей года по версии ведущих туристических изданий",
   },
 ]
 
@@ -30,10 +30,10 @@ export function WhyChooseUs() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-6 text-balance">
-            Почему выбирают <span className="font-semibold">Horizon Voyages</span>
+            Почему выбирают <span className="font-semibold">Elite Hotels</span>
           </h2>
           <p className="text-lg text-muted-foreground text-balance leading-relaxed">
-            Мы превращаем ваши мечты о путешествиях в реальность с исключительным сервисом и незабываемыми впечатлениями
+            Мы создаём не просто проживание — мы создаём воспоминания, к которым хочется возвращаться снова
           </p>
         </div>
 

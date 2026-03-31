@@ -4,34 +4,34 @@ import { Calendar, Users, Star } from "lucide-react"
 
 const packages = [
   {
-    title: "Гранд-тур по Европе",
-    duration: "14 дней",
-    groupSize: "12-16 человек",
+    title: "Романтический уикенд",
+    duration: "2 ночи",
+    groupSize: "2 персоны",
     rating: "4.9",
-    reviews: "234",
-    image: "/european-cities-paris-eiffel-tower-romantic.jpg",
-    highlights: ["Париж", "Рим", "Барселона", "Амстердам"],
-    price: "429 900 ₽",
+    reviews: "312",
+    image: "/santorini-sunset.png",
+    highlights: ["Завтрак в номер", "SPA для двоих", "Ужин при свечах", "Шампанское"],
+    price: "от 28 000 ₽",
   },
   {
-    title: "Азиатское приключение",
-    duration: "10 дней",
-    groupSize: "8-12 человек",
+    title: "Деловой пакет",
+    duration: "от 1 ночи",
+    groupSize: "1 персона",
     rating: "4.8",
-    reviews: "189",
-    image: "/asian-temples-thailand-bangkok-golden-temple.jpg",
-    highlights: ["Бангкок", "Сингапур", "Бали", "Куала-Лумпур"],
-    price: "349 900 ₽",
+    reviews: "198",
+    image: "/dubai-modern-skyline-luxury-desert.jpg",
+    highlights: ["Ранний заезд", "Трансфер из аэропорта", "Переговорная", "Поздний выезд"],
+    price: "от 14 000 ₽",
   },
   {
-    title: "Сафари-экспедиция",
-    duration: "7 дней",
-    groupSize: "6-10 человек",
+    title: "Семейный отдых",
+    duration: "7 ночей",
+    groupSize: "Семья",
     rating: "5.0",
-    reviews: "156",
-    image: "/african-safari-wildlife-elephants-sunset.jpg",
-    highlights: ["Серенгети", "Масаи Мара", "Нгоронгоро", "Амбосели"],
-    price: "599 900 ₽",
+    reviews: "245",
+    image: "/maldives-overwater-bungalows-crystal-clear-water.jpg",
+    highlights: ["Семейный люкс", "Детская программа", "Аквапарк", "Полный пансион"],
+    price: "от 95 000 ₽",
   },
 ]
 
@@ -42,10 +42,10 @@ export function PopularPackages() {
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
           <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-6 text-balance">
-            Популярные <span className="font-semibold">туры</span>
+            Пакеты <span className="font-semibold">и предложения</span>
           </h2>
           <p className="text-lg text-muted-foreground text-balance leading-relaxed">
-            Тщательно подобранные туры, объединяющие лучшие направления и впечатления
+            Готовые пакеты для любого случая — от романтического вечера до длительного семейного отдыха
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export function PopularPackages() {
                     <div className="text-2xl font-semibold text-primary">{pkg.price}</div>
                   </div>
                   <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
-                    Забронировать
+                    Выбрать
                   </Button>
                 </div>
               </div>
