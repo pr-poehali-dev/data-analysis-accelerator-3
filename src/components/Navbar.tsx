@@ -2,7 +2,11 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
-export function Navbar() {
+interface NavbarProps {
+  onBooking: () => void
+}
+
+export function Navbar({ onBooking }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -54,7 +58,7 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
+            <Button onClick={onBooking} className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
               Забронировать номер
             </Button>
           </div>
@@ -82,8 +86,8 @@ export function Navbar() {
             <a href="#contact" className="block text-base font-medium text-foreground/70 hover:text-foreground">
               Контакты
             </a>
-            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
-              Забронировать
+            <Button onClick={onBooking} className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
+              Забронировать номер
             </Button>
           </div>
         </div>

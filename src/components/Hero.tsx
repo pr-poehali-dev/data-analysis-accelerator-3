@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
-export function Hero() {
+interface HeroProps {
+  onBooking: () => void
+}
+
+export function Hero({ onBooking }: HeroProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-muted/30 to-background">
       {/* Background Image */}
@@ -28,12 +32,13 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <Button
               size="lg"
+              onClick={onBooking}
               className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 h-14 text-base group"
             >
               Выбрать отель
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-base border-2 bg-transparent">
+            <Button size="lg" variant="outline" onClick={onBooking} className="rounded-full px-8 h-14 text-base border-2 bg-transparent">
               Забронировать номер
             </Button>
           </div>

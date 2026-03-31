@@ -2,6 +2,10 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, ArrowRight } from "lucide-react"
 
+interface FeaturedDestinationsProps {
+  onBooking: () => void
+}
+
 const destinations = [
   {
     name: "Eleon",
@@ -33,7 +37,7 @@ const destinations = [
   },
 ]
 
-export function FeaturedDestinations() {
+export function FeaturedDestinations({ onBooking }: FeaturedDestinationsProps) {
   return (
     <section id="destinations" className="py-32 bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -79,7 +83,7 @@ export function FeaturedDestinations() {
 
                 <div className="flex items-center justify-between pt-4 border-t border-border">
                   <span className="text-sm font-semibold text-primary">{destination.price}</span>
-                  <Button variant="ghost" size="sm" className="group/btn text-foreground hover:text-primary">
+                  <Button variant="ghost" size="sm" onClick={onBooking} className="group/btn text-foreground hover:text-primary">
                     Забронировать
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
