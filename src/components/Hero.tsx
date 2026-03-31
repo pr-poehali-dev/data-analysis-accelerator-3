@@ -11,8 +11,8 @@ export function Hero({ onBooking }: HeroProps) {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/stunning-tropical-beach-paradise-with-crystal-clea.jpg"
-          alt="Райское направление"
+          src="https://cdn.poehali.dev/projects/c38de44d-1171-44ea-bd2b-8821fc7542ab/files/a072c3e6-6250-4095-9476-d517c1afe19e.jpg"
+          alt="Роскошный отель"
           className="w-full h-full object-cover opacity-20"
         />
       </div>
